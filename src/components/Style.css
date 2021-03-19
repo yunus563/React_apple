@@ -1,0 +1,275 @@
+/* Components --------- */
+header {
+  background-image: url(../images/bg.jpg);
+  background-size: 100% 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+header .container .row {
+  align-items: center;
+}
+header .container .row ul {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 0;
+}
+
+header .container .row ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+header .container .row ul li a {
+  text-decoration: none;
+  color: #666666;
+  /* color: wheat; */
+  font-weight: 500;
+}
+header .container .row ul li .nav_link.active {
+  text-decoration: none;
+  color: #497e04;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -1;
+  margin-bottom: -3px;
+}
+header .container .row ul li .nav_link_top.active {
+  text-decoration: none;
+  color: #cccccc;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -1;
+  margin-bottom: -3px;
+}
+
+header .container .row ul li:hover .nav_link{
+  color: #497e04;
+}
+
+header .container .row ul li:hover a {
+  color: #bbb;
+  transition: 0.3s;
+}
+
+header .container .row ul li i {
+  color: #bbb;
+  font-size: 30px;
+  margin-top: 23px;
+}
+header .container .row ul li i:hover {
+  color: white;
+  transition: 0.3s;
+  font-size: 30px;
+}
+
+/* Home Page ----- */
+
+.section_header {
+  background-image: url(../images/bg_slider.gif);
+}
+.section_header .container-fluid {
+  margin: 0;
+  padding: 0;
+}
+.carousel-control-next,
+.carousel-control-prev {
+  display: none;
+}
+
+/* Footer */
+footer {
+  background-image: url(../images/bg.jpg);
+  background-size: 100% 100%;
+  padding-bottom: 35px;
+}
+footer h4 {
+  font-size: 26px;
+  line-height: 1.2em;
+  color: rgb(235, 231, 231);
+  font-weight: 400;
+  padding: 43px 0 15px 0;
+}
+footer ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+}
+footer ul li {
+  display: flex;
+  align-items: center;
+  border-bottom: 0.1px solid #3d3d3d;
+}
+footer ul li:first-child {
+  display: flex;
+  align-items: center;
+  border-top: 0.1px solid #494949;
+}
+footer ul li i {
+  margin-right: 7px;
+  color: #696969;
+  font-size: 13px;
+}
+footer .logo i {
+  margin-right: 7px;
+  color: #696969;
+  font-size: 13px;
+  color: white;
+  background: #000;
+  font-size: 15px;
+}
+
+footer ul li a {
+  color: #797878;
+  text-decoration: none;
+  font-style: normal;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  font-size: 14px;
+  font-style: italic;
+}
+footer ul li a:hover {
+  color: white;
+  text-decoration: none;
+  font-style: normal;
+}
+footer .form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-end;
+}
+footer .form input {
+  background: #fff;
+  padding: 6px 18px;
+  font: 14px "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-style: inherit;
+  color: #fffefe;
+  margin: 0 0 12px 0;
+  font-style: italic;
+  border-radius: 3px;
+}
+footer .form button {
+  width: 45%;
+  float: right;
+  height: 32px;
+  background: #fff;
+  line-height: 32px;
+  color: #000;
+  font-weight: 500;
+  text-align: center;
+  font-style: normal;
+  text-decoration: none;
+  border: none;
+  padding-bottom: 4px;
+}
+footer .form button:hover {
+  color: white;
+  background: rgb(137, 206, 34);
+}
+
+/* Media---------------------------- */
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+
+/* // Large devices (desktops, 992px and up) */
+@media (max-width: 1199px) {
+  header .col-lg-4 {
+    margin-bottom: 0 !important;
+  }
+}
+
+/* // Medium devices tablets, 768px and up */
+@media (max-width: 991px) {
+  /* Header */
+  header .col-lg-4 img {
+    width: 100%;
+  }
+  header .container .row ul {
+    padding: 0;
+  }
+  .info .top .right img {
+    margin-right: 10px;
+    width: 130px;
+  }
+  .info .top .left p {
+    font: 12px "Trebuchet MS", Arial, Helvetica, sans-serif;
+    color: #696969;
+    line-height: 18px;
+    font-style: italic;
+  }
+}
+
+/* // Small devices landscape phones, 576px and up */
+@media (max-width: 767px) {
+  /* Header */
+  header .container .col-lg-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px !important;
+  }
+  header .col-lg-8 ul {
+    padding: 0;
+  }
+  header .container img {
+    width: 50%;
+  }
+  .body_card h2 {
+    font-size: 22px;
+  }
+  .body_card h2 span {
+    height: 55px;
+  }
+  .info .top .right img {
+    margin-right: 10px;
+    width: 150px;
+  }
+  .info .container .col-lg-3 {
+    display: none;
+  }
+  .info .left {
+    padding-right: 0px;
+  }
+  .info {
+    padding-bottom: 10px;
+  }
+}
+
+/* // Small devices landscape phones, 575px and down */
+@media (max-width: 575px) {
+  header .col-lg-8 ul {
+    flex-direction: column;
+  }
+  .body_card h2 span {
+    height: 50px;
+    width: 50px;
+  }
+  .body_card p {
+    font-size: 15px;
+    margin-bottom: 3px;
+  }
+  .info .top {
+    display: flex;
+    flex-direction: column;
+  }
+  .info .right {
+    display: flex;
+    justify-content: center;
+  }
+  .info .top .right img {
+    margin-right: 0px;
+    width: 270px;
+  }
+  .info .col-lg-9 h2 {
+    font-size: 33px;
+    padding-top: 20px;
+  }
+  .info .top .left p{
+    font-size: 14px;
+    margin-top: 15px;
+  }
+}
